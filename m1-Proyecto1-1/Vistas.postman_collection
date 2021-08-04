@@ -1,0 +1,711 @@
+{
+	"info": {
+		"_postman_id": "a517fbe6-4fa9-4e26-a058-3bde30f0057a",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Eléctrico",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/electrico",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"electrico"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findOne",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/electrico/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"electrico",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByColour",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/electrico/colores/gris",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"electrico",
+								"colores",
+								"gris"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByMarca",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/electrico/marca/Kia",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"electrico",
+								"marca",
+								"Kia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByNum_puertas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/electrico/puertas/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"electrico",
+								"puertas",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByType",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/electrico/tipo/nuevo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"electrico",
+								"tipo",
+								"nuevo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 0,\r\n    \"marca\": \"Tesla\",\r\n    \"modelo\": \"950\",\r\n    \"color\": \"blanco\",\r\n    \"num_puertas\": 5,\r\n    \"tipo_vehiculo\": \"nuevo\",\r\n    \"aireAcon\": {\r\n        \"estado\": true\r\n    },\r\n    \"bateria\": {\r\n        \"id\": 1,\r\n        \"capacidad\": 5.0,\r\n        \"estado\": true\r\n    },\r\n    \"motor\": {\r\n        \"estado\": true,\r\n        \"marca\": null\r\n    },\r\n    \"num_kw\": 4.0,\r\n    \"acumulador\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/electrico",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"electrico"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 7,\r\n        \"marca\": \"Tesla\",\r\n        \"modelo\": \"900\",\r\n        \"color\": \"blanco\",\r\n        \"num_puertas\": 3,\r\n        \"tipo_vehiculo\": \"nuevo\",\r\n        \"aireAcon\": {\r\n            \"estado\": true\r\n        },\r\n        \"bateria\": {\r\n            \"id\": 3,\r\n            \"capacidad\": 6.0,\r\n            \"estado\": true\r\n        },\r\n        \"motor\": {\r\n            \"estado\": true,\r\n            \"marca\": null\r\n        },\r\n        \"num_kw\": 8.0,\r\n        \"acumulador\": false\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/electrico/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"electrico",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/electrico/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"electrico",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAll",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/electrico",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"electrico"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Combustión",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/combustion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"combustion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findOne",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/combustion/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"combustion",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByColour",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/combustion/colores/gris",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"combustion",
+								"colores",
+								"gris"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByMarca",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/combustion/marca/VW",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"combustion",
+								"marca",
+								"VW"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByNum_puertas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/electrico/puertas/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"electrico",
+								"puertas",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByType",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/combustion/tipo/nuevo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"combustion",
+								"tipo",
+								"nuevo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 0,\r\n    \"marca\": \"VW\",\r\n    \"modelo\": \"Passat\",\r\n    \"color\": \"rojo\",\r\n    \"num_puertas\": 5,\r\n    \"tipo_vehiculo\": \"seminuevo\",\r\n    \"aireAcon\": {\r\n        \"estado\": true\r\n    },\r\n    \"bateria\": {\r\n        \"id\": 2,\r\n        \"capacidad\": 8.0,\r\n        \"estado\": true\r\n    },\r\n    \"motor\": {\r\n        \"estado\": true,\r\n        \"marca\": null\r\n    },\r\n    \"num_cilindros\": 6,\r\n    \"tipo_comb\": \"gasoil\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/combustion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"combustion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"marca\": \"VWEditado\",\r\n    \"modelo\": \"golfEditado\",\r\n    \"color\": \"gris\",\r\n    \"num_puertas\": 5,\r\n    \"tipo_vehiculo\": \"seminuevo\",\r\n    \"aireAcon\": {\r\n        \"estado\": true\r\n    },\r\n    \"bateria\": {\r\n        \"id\": 2,\r\n        \"capacidad\": 8.0,\r\n        \"estado\": true\r\n    },\r\n    \"motor\": {\r\n        \"estado\": true,\r\n        \"marca\": null\r\n    },\r\n    \"num_cilindros\": 6,\r\n    \"tipo_comb\": \"gasoil\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/combustion/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"combustion",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/combustion/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"combustion",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAll",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/combustion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"combustion"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Híbrido",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/hibrido",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hibrido"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findOne",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/hibrido/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hibrido",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByColour",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/hibrido/colores/negro",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hibrido",
+								"colores",
+								"negro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByMarca",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/hibrido/marca/Toyota",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hibrido",
+								"marca",
+								"Toyota"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByNum_puertas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/hibrido/puertas/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hibrido",
+								"puertas",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByType",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/hibrido/tipo/nuevo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hibrido",
+								"tipo",
+								"nuevo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 0,\r\n    \"marca\": \"Kia\",\r\n    \"modelo\": \"Ceed\",\r\n    \"color\": \"verde\",\r\n    \"num_puertas\": 3,\r\n    \"tipo_vehiculo\": \"nuevo\",\r\n    \"aireAcon\": {\r\n        \"estado\": true\r\n    },\r\n    \"bateria\": {\r\n        \"id\": 3,\r\n        \"capacidad\": 6.0,\r\n        \"estado\": true\r\n    },\r\n    \"motor\": {\r\n        \"estado\": true,\r\n        \"marca\": null\r\n    },\r\n    \"tipo_bateria\": \"mixta\",\r\n    \"autonomia\": 1500\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/hibrido",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hibrido"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"marca\": \"KiaEditado\",\r\n    \"modelo\": \"pikantoEditado\",\r\n    \"color\": \"negro\",\r\n    \"num_puertas\": 3,\r\n    \"tipo_vehiculo\": \"nuevo\",\r\n    \"aireAcon\": {\r\n        \"estado\": true\r\n    },\r\n    \"bateria\": {\r\n        \"id\": 3,\r\n        \"capacidad\": 6.0,\r\n        \"estado\": true\r\n    },\r\n    \"motor\": {\r\n        \"estado\": true,\r\n        \"marca\": null\r\n    },\r\n    \"tipo_bateria\": \"mixta\",\r\n    \"autonomia\": 1500\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/hibrido/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hibrido",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/hibrido/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hibrido",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAll",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/hibrido",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hibrido"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
