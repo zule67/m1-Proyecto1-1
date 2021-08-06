@@ -63,7 +63,7 @@ public class CombustionServiceImpl implements CombustionService {
      */
     public Long getMaxCombustionId() {
     	if (combustiones.isEmpty())
-			return 0L;
+    	  return 0L;
 
         return Collections.max(combustiones.entrySet(),
                 (entry1, entry2) -> (int) (entry1.getKey() - entry2.getKey())
