@@ -28,7 +28,7 @@ pipeline {
         }
         stage('Sonar'){
            steps {
-               sh 'mvn verify sonar:sonar -Dsonar.projectKey=zule67_Proyecto1 -Dsonar.organization=zule67 -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=382f9f974f0a8f47b520450b4df069480277e13b'
+               sh 'mvn verify sonar:sonar -Dsonar.projectKey=zule67_Proyecto1 -Dsonar.organization=zule67 -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=b8da098e4949087b5976a872f3bb7c1f379d3a63'
 			}
  
             
