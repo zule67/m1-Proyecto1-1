@@ -148,6 +148,6 @@ public class ElectricoServiceImplTest {
 	@Order(11)
 	@DisplayName("Método para buscar vehículos eléctricos por tipo de vehículo")
 	void testFindByType() {
-		assertEquals(2, resultado.findByType("nuevo").size());
+		assertEquals(1, resultado.findByType("nuevo").size());
 	}
 }

@@ -127,27 +127,27 @@ public class HibridoServiceImplTest {
 	@Order(8)
 	@DisplayName("Método para buscar vehículos híbridos por color")
 	void testFindByColour() {
-		assertEquals(1, resultado.findByColour("azul").size());
+		assertEquals(0, resultado.findByColour("azul").size());
 	}
 
 	@Test
 	@Order(9)
 	@DisplayName("Método para buscar vehículos híbridos por número de puertas")
 	void testFindByNum_puertas() {
-		assertEquals(1, resultado.findByNum_puertas(4).size());
+		assertEquals(0, resultado.findByNum_puertas(4).size());
 	}
 
 	@Test
 	@Order(10)
 	@DisplayName("Método para buscar vehículos híbridos por marca")
 	void testFindByMarca() {
-		assertEquals(1, resultado.findByMarca("Toyota").size());
+		assertEquals(0, resultado.findByMarca("Toyota").size());
 	}
 
 	@Test
 	@Order(11)
 	@DisplayName("Método para buscar vehículos híbridos por tipo de vehículo")
 	void testFindByType() {
-		assertEquals(2, resultado.findByType("nuevo").size());
+		assertEquals(1, resultado.findByType("nuevo").size());
 	}
 }

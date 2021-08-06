@@ -127,28 +127,28 @@ public class CombustionServiceImplTest {
 	@Order(8)
 	@DisplayName("Método para buscar vehículos de combustión por color")
 	void testFindByColour() {
-		assertEquals(1, resultado.findByColour("rojo").size());
+		assertEquals(0, resultado.findByColour("rojo").size());
 	}
 
 	@Test
 	@Order(9)
 	@DisplayName("Método para buscar vehículos de combustión por número de puertas")
 	void testFindByNum_puertas() {
-		assertEquals(1, resultado.findByNum_puertas(4).size());
+		assertEquals(0, resultado.findByNum_puertas(4).size());
 	}
 
 	@Test
 	@Order(10)
 	@DisplayName("Método para buscar vehículos de combustión por marca")
 	void testFindByMarca() {
-		assertEquals(1, resultado.findByMarca("opel").size());
+		assertEquals(0, resultado.findByMarca("opel").size());
 	}
 
 	@Test
 	@Order(11)
 	@DisplayName("Método para buscar vehículos de combustión por tipo de vehículo")
 	void testFindByType() {
-		assertEquals(2, resultado.findByType("nuevo").size());
+		assertEquals(1, resultado.findByType("nuevo").size());
 	}
 
 }
