@@ -20,8 +20,12 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>16</java.version>
-		<maven.compiler.source>14</maven.compiler.source>
-		<maven.compiler.target>14</maven.compiler.target>
+		<maven.compiler.source>16</maven.compiler.source>
+		
+		<!-- sonar -->
+		<sonar.projectKey>m1-Proyecto1-1</sonar.projectKey>
+		<sonar.organization>zule67</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 	
 	<!-- Dependencias -->
